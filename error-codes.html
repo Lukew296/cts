@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Error Codes - My Awesome Site</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="dark-theme">
+    <header>
+        <nav class="container">
+            <div class="site-branding">
+                <a href="index.html" class="site-name">My Awesome Site</a>
+            </div>
+            <ul class="nav-links">
+                <li><a href="prices.html" id="nav-prices">Browse Prices</a></li>
+                <li><a href="login.html" id="nav-login">Login</a></li>
+                <li><a href="register.html" id="nav-register">Register</a></li>
+                <li>
+                    <button id="theme-toggle" aria-label="Toggle dark and light theme">
+                        <span class="icon-sun" aria-hidden="true">☀️</span>
+                        <span class="icon-moon" aria-hidden="true">🌙</span>
+                    </button>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="container">
+        <section class="page-header">
+            <h1>Error Codes Documentation</h1>
+            <p>A comprehensive list of potential site error codes and their meanings.</p>
+        </section>
+
+        <section class="error-code-list">
+            <div class="error-card">
+                <h3>ERR-404: Page Not Found</h3>
+                <p>The requested resource could not be found on the server. This usually means the URL is incorrect or the page has been moved/deleted.</p>
+            </div>
+            <div class="error-card">
+                <h3>ERR-500: Internal Server Error</h3>
+                <p>An unexpected condition was encountered by the server. This is a general error message indicating something went wrong on the server side.</p>
+            </div>
+            <div class="error-card">
+                <h3>ERR-401: Unauthorized</h3>
+                <p>Authentication is required and has failed or has not yet been provided. You might need to log in.</p>
+            </div>
+            <div class="error-card">
+                <h3>ERR-403: Forbidden</h3>
+                <p>The server understood the request but refuses to authorize it. You do not have permission to access this resource.</p>
+            </div>
+            <!-- More error codes can be added here -->
+        </section>
+    </main>
+
+    <footer>
+        <div class="container footer-content">
+            <div class="footer-section">
+                <a href="index.html" class="site-name">My Awesome Site</a>
+            </div>
+            <div class="footer-section footer-links">
+                <a href="tos.html">Terms of Service</a>
+                <a href="privacy.html">Privacy Policy</a>
+                <a href="error-codes.html" id="footer-error-codes">Error Codes</a>
+            </div>
+            <div class="footer-section social-links">
+                <a href="#" aria-label="Facebook"><img src="https://via.placeholder.com/24/ffffff/000000?text=FB" alt="Facebook"></a>
+                <a href="#" aria-label="Twitter"><img src="https://via.placeholder.com/24/ffffff/000000?text=TW" alt="Twitter"></a>
+                <a href="#" aria-label="Instagram"><img src="https://via.placeholder.com/24/ffffff/000000?text=IG" alt="Instagram"></a>
+            </div>
+        </div>
+        <div class="container copyright">
+            &copy; 2023 My Awesome Site. All rights reserved.
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        /* Ensure the main content pushes footer down if needed */
+        .flex-grow {
+            flex-grow: 1;
+        }
+    </style>
+</head>
+<body class="bg-gray-100 min-h-screen flex flex-col">
+    <!-- Header -->
+    <header class="bg-blue-700 text-white p-4 shadow-md flex justify-between items-center">
+        <div class="flex items-center">
+            <button id="sidebarToggle" class="text-white mr-4 lg:hidden focus:outline-none" aria-label="Toggle sidebar">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path></svg>
+            </button>
+            <h1 class="text-2xl font-bold">My Dashboard</h1>
+        </div>
+        <nav>
+            <ul class="flex space-x-4">
+                <li><a href="#" class="hover:text-blue-200 transition duration-200">Settings</a></li>
+                <li><a href="login.html" class="hover:text-blue-200 transition duration-200">Logout</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="flex flex-grow">
+        <!-- Sidebar -->
+        <aside id="sidebar" class="bg-blue-800 text-white w-64 p-4 space-y-4 flex-shrink-0 hidden lg:block transition-all duration-300 ease-in-out">
+            <nav>
+                <ul>
+                    <li class="mb-2"><a href="#" class="block py-2 px-3 rounded-lg hover:bg-blue-700 transition duration-200">Overview</a></li>
+                    <li class="mb-2"><a href="#" class="block py-2 px-3 rounded-lg hover:bg-blue-700 transition duration-200">Analytics</a></li>
+                    <li class="mb-2"><a href="#" class="block py-2 px-3 rounded-lg hover:bg-blue-700 transition duration-200">Reports</a></li>
+                    <li class="mb-2"><a href="#" class="block py-2 px-3 rounded-lg hover:bg-blue-700 transition duration-200">Users</a></li>
+                    <li class="mb-2"><a href="#" class="block py-2 px-3 rounded-lg hover:bg-blue-700 transition duration-200">Products</a></li>
+                </ul>
+            </nav>
+        </aside>
+
+        <!-- Main Content -->
+        <main class="flex-grow p-6">
+            <h2 class="text-3xl font-bold text-gray-800 mb-6">Welcome to Your Dashboard!</h2>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-8">
+                <!-- Card 1 -->
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <h3 class="text-xl font-semibold text-gray-700 mb-2">Total Sales</h3>
+                    <p class="text-4xl font-bold text-blue-600">$12,345</p>
+                    <p class="text-gray-500 text-sm mt-2">+5% from last month</p>
+                </div>
+                <!-- Card 2 -->
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <h3 class="text-xl font-semibold text-gray-700 mb-2">New Users</h3>
+                    <p class="text-4xl font-bold text-green-600">2,100</p>
+                    <p class="text-gray-500 text-sm mt-2">+12% from last month</p>
+                </div>
+                <!-- Card 3 -->
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <h3 class="text-xl font-semibold text-gray-700 mb-2">Active Projects</h3>
+                    <p class="text-4xl font-bold text-purple-600">15</p>
+                    <p class="text-gray-500 text-sm mt-2">3 projects completed</p>
+                </div>
+            </div>
+
+            <!-- Recent Activity Section -->
+            <div class="bg-white p-6 rounded-lg shadow-md">
+                <h3 class="text-xl font-semibold text-gray-700 mb-4">Recent Activity</h3>
+                <ul class="divide-y divide-gray-200">
+                    <li class="py-3 flex justify-between items-center">
+                        <span class="text-gray-800">User John Doe registered</span>
+                        <span class="text-gray-500 text-sm">2 hours ago</span>
+                    </li>
+                    <li class="py-3 flex justify-between items-center">
+                        <span class="text-gray-800">New report generated for Q3</span>
+                        <span class="text-gray-500 text-sm">Yesterday</span>
+                    </li>
+                    <li class="py-3 flex justify-between items-center">
+                        <span class="text-gray-800">Product "Premium Plan" updated</span>
+                        <span class="text-gray-500 text-sm">3 days ago</span>
+                    </li>
+                </ul>
+            </div>
+        </main>
+    </div>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
